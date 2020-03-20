@@ -10,7 +10,8 @@ import (
 	"os"
 	"regexp"
 
-	socks5 "github.com/armon/go-socks5"
+	socks5 "github.com/JackieKu/go-socks5"
+
 	"github.com/gorilla/websocket"
 	"github.com/jpillora/requestlog"
 	"golang.org/x/crypto/ssh"
@@ -111,6 +112,7 @@ func NewServer(config *Config) (*Server, error) {
 		} else {
 			socksConfig.Logger = log.New(ioutil.Discard, "", 0)
 		}
+		socksConfig.Socks4Support = true
 		s.socksServer, err = socks5.New(socksConfig)
 		if err != nil {
 			return nil, err
