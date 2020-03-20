@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/armon/go-socks5"
+	"github.com/JackieKu/go-socks5"
 	"github.com/jpillora/chisel/share/cio"
 	"github.com/jpillora/chisel/share/cnet"
 	"github.com/jpillora/chisel/share/settings"
@@ -61,7 +61,7 @@ func New(c Config) *Tunnel {
 		if t.Logger.Debug {
 			sl = log.New(os.Stdout, "[socks]", log.Ldate|log.Ltime)
 		}
-		t.socksServer, _ = socks5.New(&socks5.Config{Logger: sl})
+		t.socksServer, _ = socks5.New(&socks5.Config{Logger: sl, Socks4Support: true})
 		extra += " (SOCKS enabled)"
 	}
 	t.Debugf("Created%s", extra)
