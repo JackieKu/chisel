@@ -16,7 +16,7 @@ import (
 	"github.com/jpillora/requestlog"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/jpillora/chisel/share"
+	"github.com/JackieKu/chisel/share"
 )
 
 // Config is the configuration for the chisel service
