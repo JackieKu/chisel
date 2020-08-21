@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	chshare "github.com/jpillora/chisel/share"
-	"github.com/jpillora/chisel/share/ccrypto"
-	"github.com/jpillora/chisel/share/cio"
-	"github.com/jpillora/chisel/share/cnet"
-	"github.com/jpillora/chisel/share/settings"
+	chshare "github.com/JackieKu/chisel/share"
+	"github.com/JackieKu/chisel/share/ccrypto"
+	"github.com/JackieKu/chisel/share/cio"
+	"github.com/JackieKu/chisel/share/cnet"
+	"github.com/JackieKu/chisel/share/settings"
 	"github.com/jpillora/requestlog"
 	"golang.org/x/crypto/ssh"
 )

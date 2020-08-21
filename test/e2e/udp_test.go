@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	chclient "github.com/jpillora/chisel/client"
-	chserver "github.com/jpillora/chisel/server"
+	chclient "github.com/JackieKu/chisel/client"
+	chserver "github.com/JackieKu/chisel/server"
 	"golang.org/x/sync/errgroup"
 )
 
